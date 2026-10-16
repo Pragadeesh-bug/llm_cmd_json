@@ -1,0 +1,62 @@
+01. COMMAND: go to the door and wave
+    OUTPUT:  {"actions": [{"action": "move_to", "target": "the door"}, {"action": "wave"}]}
+    RESULT:  PASS
+02. COMMAND: move to the kitchen
+    OUTPUT:  {"actions": [{"action": "move_to", "target": "the kitchen"}]}
+    RESULT:  PASS
+03. COMMAND: navigate to the charging station and stop
+    OUTPUT:  {"actions": [{"action": "move_to", "target": "the charging station"}, {"action": "stop"}]}
+    RESULT:  PASS
+04. COMMAND: turn left
+    OUTPUT:  {"actions": [{"action": "turn", "direction": "left"}]}
+    RESULT:  PASS
+05. COMMAND: turn right
+    OUTPUT:  {"actions": [{"action": "turn", "direction": "right"}]}
+    RESULT:  PASS
+06. COMMAND: move forward 2 meters
+    OUTPUT:  {"actions": [{"action": "move_forward", "distance_m": 2.0}]}
+    RESULT:  PASS
+07. COMMAND: go forward 0.5 m
+    OUTPUT:  {"actions": [{"action": "move_forward", "distance_m": 0.5}]}
+    RESULT:  PASS
+08. COMMAND: move backward 1 meter
+    OUTPUT:  {"actions": [{"action": "move_backward", "distance_m": 1.0}]}
+    RESULT:  PASS
+09. COMMAND: pick up the red box
+    OUTPUT:  {"actions": [{"action": "pick_up", "object": "the red box"}]}
+    RESULT:  PASS
+10. COMMAND: put down the book on the table
+    OUTPUT:  {"actions": [{"action": "put_down", "object": "the book", "target": "the table"}]}
+    RESULT:  PASS
+11. COMMAND: say "Hello there"
+    OUTPUT:  {"actions": [{"action": "speak", "text": "hello there"}]}
+    RESULT:  PASS
+12. COMMAND: wait 5 seconds
+    OUTPUT:  {"actions": [{"action": "wait", "seconds": 5.0}]}
+    RESULT:  PASS
+13. COMMAND: go to the window and turn left
+    OUTPUT:  {"actions": [{"action": "move_to", "target": "the window"}, {"action": "turn", "direction": "left"}]}
+    RESULT:  PASS
+14. COMMAND: move to the desk and wave
+    OUTPUT:  {"actions": [{"action": "move_to", "target": "the desk"}, {"action": "wave"}]}
+    RESULT:  PASS
+15. COMMAND: go forward 3 m and stop
+    OUTPUT:  {"actions": [{"action": "move_forward", "distance_m": 3.0}, {"action": "stop"}]}
+    RESULT:  PASS
+16. COMMAND: pick up the bottle and go to the sink
+    OUTPUT:  {"actions": [{"action": "move_to", "target": "the sink"}, {"action": "pick_up", "object": "the bottle"}]}
+    RESULT:  PASS
+17. COMMAND: wave
+    OUTPUT:  {"actions": [{"action": "wave"}]}
+    RESULT:  PASS
+18. COMMAND: stop
+    OUTPUT:  {"actions": [{"action": "stop"}]}
+    RESULT:  PASS
+19. COMMAND: wait 1 second and wave
+    OUTPUT:  {"actions": [{"action": "wave"}, {"action": "wait", "seconds": 1.0}]}
+    RESULT:  PASS
+20. COMMAND: dance on the moon
+    OUTPUT:  {"actions": []}
+    RESULT:  PASS
+
+Summary: 20/20 tests passed.
